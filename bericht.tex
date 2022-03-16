@@ -2,13 +2,27 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{sectsty}
+\sectionfont{\fontsize{100}{100}\selectfont}
 \title{Mathematisches Pendel}
 \author{Jean und Aurèle}
 \date{März 2022}
 \begin{document}
     \maketitle
-    \chapter*{Einleitung}
-    Einleitung von Jean
+    \section*{Einleitung}
+    Unsere Intuition würde uns sagen, dass sich ein Objekt umso schneller bewegt, je schwerer 
+es ist, aber das ist eben nicht der Fall. Die direkteste und offensichtlichste Analogie zum Phänomen des Pendels ist das Fallenlassen von Gewichten mit unterschiedlicher Masse aus gleicher Höhe; beide kommen zur gleichen Zeit auf dem Boden an (ohne den Widerstand durch die Luftreibung zu berücksichtigen).\\
+
+Nehmen wir das Beispiel des Pendels. Nehmen wir an, wir halten das Seil, das die Masse hält, auf Armeslänge. Da sich kein Parameter außer einer allmählichen Zunahme der Masse ändert, wird die Kraft, die unser Arm ausübt, um das Gewicht zu halten, immer größer.  Was wir intuitiv als höhere Geschwindigkeit wahrnehmen, ist in Wirklichkeit eine höhere Kraft, der wir entgegenwirken müssen.\\
+
+Es war Galileo Galilei, der berühmte Astronom, der im Jahr 1590 das folgende Gesetz definierte: Die Anziehungskraft, die die Erde auf eine schwere Masse ausübt, ist stärker als die auf eine leichte Masse. Um eine schwere Masse in Bewegung zu setzen, ist jedoch mehr Energie erforderlich: Trägheit. 
+Bei einem Fall gleichen sich Anziehung und Trägheit jedoch perfekt aus, sodass die Geschwindigkeit immer gleich bleibt. 
+In der klassischen Gleichung für die Periode eines Pendels kommt die Masse übrigens nicht vor. \\
+
+Das Prinzip des Pendels hat viele Entdeckungen ermöglicht. So hat Foucault auf diese Weise die Drehbewegung der Erde nachgewiesen. Das Pendel wurde auch verwendet, um die Geschwindigkeit von Geschossen in der Ballistik zu berechnen.
+
+
+
     \chapter*{Bestimmung des Fehlers der Zeitmessung}
     Die Zeit für fünf Schwingungen eines Fadenpendels mit einer Amplitude von 10° wurde 20-mal berechnet. Dabei ergaben sich die folgenden Werte:\\
     \\
@@ -49,7 +63,7 @@
         \hline
         5.91 s & 0.068 s \\
         \hline
-        5.81 s & o.032 s \\
+        5.81 s & 0.032 s \\
         \hline
         5.89 s & 0.048 s \\
         \hline
