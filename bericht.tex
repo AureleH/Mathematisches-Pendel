@@ -5,6 +5,10 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage[margin=1in,footskip=0.25in]{geometry}
+\usepackage{pgf}
+\usepackage[absolute, overlay]{textpos}
+\setlength{\TPHorizModule}{1.0 pt}
+\textblockorigin{\paperwidth}{0.0 pt}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -13,28 +17,36 @@
 
 
 \begin{document}
+    
+    \pgfmathwidth{"\\\\An \\ J. Dubois \& A. Huillet\\ MNG Rämibühl\\"}
+    \begin{textblock}{\pgfmathresult}[1, 0](0, 0)
+    \noindent
+    \\\\An \\ J. Dubois \& A. Huillet\\ MNG Rämibühl\\ 8001 Zürich
+    \end{textblock}
     \input{title.tex}
+
     \newpage
 
     \section{Einleitung}
-    Unsere Intuition würde uns sagen, dass je schneller sich ein Objekt bewegt, desto schwerer
-    es ist, aber das ist eben nicht der Fall. Die direkteste und offensichtlichste Analogie
-    zum Phänomen des Pendels ist das Fallenlassen von Gewichten mit unterschiedlicher
-    Masse aus gleicher Höhe; beide kommen zur gleichen Zeit auf dem Boden an (ohne den
-    Widerstand durch die Luftreibung zu berücksichtigen). Nehmen wir das Beispiel des 
-    Pendels. Nehmen wir an, wir halten das Seil, das die Masse hält, auf Armeslänge. Da
-    sich kein Parameter außer einer allmählichen Zunahme der Masse ändert, wird die Kraft
-    die unser Arm ausübt, um das Gewicht zu halten, immer größer.  Was wir intuitiv als
-    höhere Geschwindigkeit wahrnehmen, ist in Wirklichkeit eine höhere Kraft, der wir 
-    entgegenwirken müssen. Es war Galileo Galilei, der berühmte Astronom, der im Jahr
-    1590 das folgende Gesetz definierte: Die Anziehungskraft, die die Erde auf eine schwere
-    Masse ausübt, ist stärker als die auf eine leichte Masse. Um eine schwere Masse in 
-    Bewegung zu setzen, ist jedoch mehr Energie erforderlich: Trägheit. Bei einem Fall 
-    gleichen sich Anziehung und Trägheit jedoch perfekt aus, sodass die Geschwindigkeit 
-    immer gleich bleibt.In der klassischen Gleichung für die Periode eines Pendels kommt die 
-    Masse übrigens nicht vor. Das Prinzip des Pendels hat viele Entdeckungen ermöglicht. 
-    So hat Foucault auf diese Weise die Drehbewegung der Erde nachgewiesen. Das Pendel 
-    wurde auch verwendet, um die Geschwindigkeit von Geschossen in der Ballistik zu berechnen
+    Unsere Intuition würde uns sagen, dass je schneller sich ein Objekt bewegt, desto schwerer\\\\
+    es ist, aber das ist eben nicht der Fall. Die direkteste und offensichtlichste Analogie\\\\
+    zum Phänomen des Pendels ist das Fallenlassen von Gewichten mit unterschiedlicher\\\\
+    Masse aus gleicher Höhe; beide kommen zur gleichen Zeit auf dem Boden an (ohne den\\\\
+    Widerstand durch die Luftreibung zu berücksichtigen). Nehmen wir das Beispiel des \\\\
+    Pendels. Nehmen wir an, wir halten das Seil, das die Masse hält, auf Armeslänge. Da\\\\
+    sich kein Parameter außer einer allmählichen Zunahme der Masse ändert, wird die Kraft\\\\
+    die unser Arm ausübt, um das Gewicht zu halten, immer größer.  Was wir intuitiv als\\\\
+    höhere Geschwindigkeit wahrnehmen, ist in Wirklichkeit eine höhere Kraft, der wir \\\\
+    entgegenwirken müssen. Es war Galileo Galilei, der berühmte Astronom, der im Jahr\\\\
+    1590 das folgende Gesetz definierte: Die Anziehungskraft, die die Erde auf eine schwere\\\\
+    Masse ausübt, ist stärker als die auf eine leichte Masse. Um eine schwere Masse in \\\\
+    Bewegung zu setzen, ist jedoch mehr Energie erforderlich: Trägheit. Bei einem Fall \\\\
+    gleichen sich Anziehung und Trägheit jedoch perfekt aus, sodass die Geschwindigkeit \\\\
+    immer gleich bleibt.In der klassischen Gleichung für die Periode eines Pendels kommt \\\\ 
+    die Masse übrigens nicht vor. Das Prinzip des Pendels hat viele Entdeckungen ermöglicht. \\\\
+    So hat Foucault auf diese Weise die Drehbewegung der Erde nachgewiesen. Das  \\\\
+    Pendel wurde auch verwendet, um die Geschwindigkeit von Geschossen in der \\\\
+    Ballistik zu berechnen.
     \newpage
     \section{Theorie}
     Es existieren zwei Arten von klassische Pendeln. Das mathematische Pendel, was die einfachste und idealste Repräsentation eines Pendels ist, und das physikalisches Pendel. Es ist eine realistischere  Repräsentation, aber wir werden uns heute mit ein mathematisches Pendel beschäftigen. An eine bestimmt lange Seile wird eine Masse angehängt, wobei die Masse und Dehnung der Seile so gering wie möglich ist. 
@@ -189,14 +201,50 @@
         \[\frac{0.1\textit{[m]}}{(\frac{0.637[s]}{2\pi})^2}=9.7293 [\frac{m}{s^2}]\]
         \newpage
         \section{Experiment}
-        In unserem Experiment benutzen wir ein klassisches Pendel mit einer Masse und einer Seile. Oben steht einen Winkelmesser, wo die Seile im Ruhezustand bei 90 Grad steht. 
-Insgesamt haben wir mit drei verschiedenen Massen, und zwei verschiedene Winkel gearbeitet. Die Masse wird vernachlässigt, und wir haben angenommen, dass die Seile keine Dehnung untergeht
-Die längen der Seilen ging von 10cm bis zu 100cm, oder 1 Meter. 
-Die Periode wurde gemessen, jedes Mal das Pendel Vertikal zum Boden war (90° auf den Winkelmesser). 
+        In unserem Experiment benutzen wir ein klassisches Pendel mit einer Masse und einer\\\\
+        Seile. Oben steht einen Winkelmesser, wo die Seile im Ruhezustand bei 90 Grad steht.\\\\
+        Insgesamt haben wir mit drei verschiedenen Massen, und zwei verschiedene Winkel\\\\
+        gearbeitet. Die Masse wird vernachlässigt, und wir haben angenommen, dass die Seile\\\\
+        keine Dehnung untergeht. Die Seilenlänge ging von 10cm bis zu 100cm, oder 1\\\\
+        Meter. Die Periode wurde gemessen, jedes Mal das Pendel Vertikal zum Boden war\\\\
+        (90° auf den Winkelmesser). 
+        \vfill
         \begin{figure}[h!]
-            \centering
-                \includegraphics[scale=0.25, width=5cm]{Winkelmesser.png}
+            \begin{subfigure}{.5\textwidth}
+                \centering
+                \includegraphics[scale=0.25, width=3cm]{Winkelmesser.png}
                 \caption{Winkelmesser}
+                \label{fig:winkelmesser}
+            \end{subfigure}
+            \begin{subfigure}{.5\textwidth}
+                \centering
+                \includegraphics[scale=0.25, width=5cm]{Pendulum.jpeg}
+                \caption{Skizze Pendel}
+                \label{fig:Pendulum}
+            \end{subfigure}
         \end{figure}
+        \newpage
+        \section{Schlussfolgerungen}
+        Mit unseren Experimenten haben wir zeigen können, dass bei gleich langen Schnuren\\\\
+        aber unterschiedlichem Winkel die Periode gleich blieb. Der wichtigste Punkt, der übrigens\\\\
+        unserer Intuition widerspricht, ist die Tatsache, dass die Masse keine Rolle bei der\\\\
+        Periode spielt. Mit unseren erhaltenen Periodenwerten konnten wir eine\\\\
+        Gravitationsbeschleunigung von 9,71 $m/s^2$  bestimmen, ein Wert, der um 1\% vom \\\\
+        absoluten Wert von 9,81 $m/s^2$ abweicht, die gleiche Fehlerspanne, die wir bei unseren\\\\
+        Messwerten hatten.\\\\\\
+        Bei grösseren Winkeln sind die potentielle und kinetische Energie grösser, aber da die\\\\
+        Bogenlänge, die die Massen folgen soll länger ist, und der Geschwindigkeit höher ist,\\\\
+        gleicht sich alles heraus. Deshalb ist alles gleich bis sich die Schnurlänge ändert.\\\\\\
+        Das Experiment könnte relativ einfach verbessert werden, indem man noch mehr\\\\
+        Messungen macht, um präzisere Resultate zu erhalten. Andere Schnuren sowie andere \\\\
+        Massen hätten untersucht sein können. Zusätzlich wurden die Limiten unseres \\\\
+        Experiments, sowie der Theorie nicht untersucht. Noch besser wäre natürlich die Logik\\\\
+        eines physikalischen Pendels zu folgen.
+        \newpage
+        \section{Literaturverzeichnis}
+        \small
+        FoTa 1997      Formel und Tafeln( 7.Auflage, 2019); DMK/DPK; Orell Füssli Verlag, Zürich, 1997
+        
+
 
 \end{document}
